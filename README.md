@@ -17,5 +17,7 @@ The project is done using Android MVVM architecture components and Hilt for depe
 DataBinding library is used to bind UI elements with data obtained.
 
 https://user-images.githubusercontent.com/44354796/181632146-2a3255ce-7464-4d91-a108-564e6b51d462.jpg
+
 https://user-images.githubusercontent.com/44354796/181632202-08e5c71b-5613-4a9b-898a-e26cdb817513.jpg
+
 https://user-images.githubusercontent.com/44354796/181632259-f6d92af5-b01c-424b-8552-de02d0747c0e.jpg
