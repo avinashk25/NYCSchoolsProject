@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">NYCSchoolsProject</string>
+    <string name="there_is_no_data">There is no data.</string>
+    <string name="retry">Retry</string>
+    <string name="title_activity_school_details">SchoolDetailsActivity</string>
+    <string name="no_data_available">No Data available</string>
+</resources>

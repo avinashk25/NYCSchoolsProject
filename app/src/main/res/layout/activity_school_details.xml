@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <import type="android.view.View" />
+
+        <variable
+            name="viewModel"
+            type="com.example.nycschoolsproject.viewmodel.SchoolDetailViewModel" />
+    </data>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="12dp"
+        android:layout_marginTop="12dp"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/txtSchoolDBN"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:text="@{viewModel.schoolSATScoreResponse.dbn}"
+            android:visibility="visible"
+            tools:text="DBN"/>
+
+        <TextView
+            android:id="@+id/txtSchoolName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:text="@{viewModel.schoolSATScoreResponse.schoolName}"
+            android:visibility="visible"
+            tools:text="School Name"/>
+        <TextView
+            android:id="@+id/txtSatScoresLabel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:layout_marginTop="20dp"
+            android:text="@{viewModel.schoolSATScoreResponse.numOfSatTestTakers}"
+            android:textColor="@color/black"
+            android:paddingStart="10dp"
+            android:visibility="visible"
+            tools:text="300"/>
+        <TextView
+            android:id="@+id/txtCriticalReadingAvg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:text="@{viewModel.schoolSATScoreResponse.satCriticalReadingAvgScore}"
+            android:textColor="@color/black"
+            android:paddingStart="10dp"
+            android:visibility="visible"
+            tools:text="100"/>
+        <TextView
+            android:id="@+id/txtMathAvg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:text="@{viewModel.schoolSATScoreResponse.satMathAvgScore}"
+            android:textColor="@color/black"
+            android:paddingStart="10dp"
+            android:visibility="visible"
+            tools:text="100"/>
+        <TextView
+            android:id="@+id/txtWritingAvg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:text="@{viewModel.schoolSATScoreResponse.satWritingAvgScore}"
+            android:textColor="@color/black"
+            android:paddingStart="10dp"
+            android:visibility="visible"
+            tools:text="100"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="25sp"
+            android:text="@string/no_data_available"
+            android:visibility="@{(viewModel.emptySchoolSATScore || viewModel.schoolSATScoreResponse.schoolName == null) ? View.VISIBLE : View.GONE}"
+            android:paddingTop="150dp"/>
+    </LinearLayout>
+</layout>

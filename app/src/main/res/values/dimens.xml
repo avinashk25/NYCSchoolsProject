@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="margin_normal">8dp</dimen>
+    <dimen name="avatar_size">72dp</dimen>
+    <dimen name="margin_large">16dp</dimen>
+    <dimen name="elevation_app_bar">4dp</dimen>
+    <dimen name="card_margin_top">5dp</dimen>
+    <dimen name="card_margin_horizontal">5dp</dimen>
+    <dimen name="card_content_start_margin">5dp</dimen>
+    <dimen name="card_content_end_margin">5dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+</resources>
